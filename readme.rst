@@ -4,7 +4,7 @@ Create LCC labels from external file
 
 Tags:
 
-sticky-labels
+sticky-labels textmerg
 
 URL:
 

@@ -1,5 +1,5 @@
 
-I am creating a page of sticky labels containing Library of Congress Classification call numbers (LCCs). They are in what the `labels` package calls "plain format".
+I am creating a page of sticky labels containing Library of Congress Classification call numbers (LCCs). They are in what the [`labels` package](https://www.ctan.org/pkg/labels) calls "plain format".
 
     \begin{filecontents*}{\jobname.dat}
     PR
@@ -137,7 +137,7 @@ It looks like this:
 
 (insert image here)
 
-Of course, I still need to read in from the external file. I don't think the `labels` package permits formatting changes when reading from a file, so I tried `textmerg`.
+Of course, I still need to read in from the external file. I don't think the `labels` package permits formatting changes when reading from a file, so I tried [`textmerg`](https://www.ctan.org/pkg/textmerg).
 
     \begin{filecontents*}{\jobname.dat}
     PR
