@@ -1,0 +1,63 @@
+\begin{filecontents*}{\jobname.dat}
+PR
+6051
+.D3352
+M68
+
+Z
+253.4
+.T47
+K58
+
+QA
+76.6
+.K644
+
+Z
+250.8
+.M46
+E578
+
+PR
+5815
+
+PR
+6039
+.O32
+T65
+\end{filecontents*}
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{textmerg}
+
+\usepackage[newdimens]{labels}
+\LabelCols=3
+\LabelRows=10
+\LeftPageMargin=4mm
+\RightPageMargin=4mm
+\TopPageMargin=12.5mm
+\BottomPageMargin=13mm
+\InterLabelColumn=4mm
+\InterLabelRow=0mm
+\LeftLabelBorder=0.2mm
+\RightLabelBorder=0.2mm
+\TopLabelBorder=0.2mm
+\BottomLabelBorder=0mm
+
+\LabelGridtrue % show grid for labels
+\LabelInfotrue % show info for labels
+
+\begin{document}
+\Fields{\subclass\number\cutter}
+
+\Merge{\jobname.dat}{%
+  \addresslabel{
+    \begin{center}
+    \parbox{20mm}{
+      \subclass\\
+      \number\\
+      \cutter}
+    \end{center}
+  }%
+}%
+\end{document}

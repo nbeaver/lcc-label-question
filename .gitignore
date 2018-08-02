@@ -1,0 +1,35 @@
+# Auxiliary files
+*.aux
+*.bbl
+*.blg
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.synctex.gz(busy)
+*.toc
+
+# Viewable output files
+*.dvi
+*.pdf
+*.ps
+
+# Text editor temp files,
+# so you can still commit with the text editor open.
+*.swp
+*.txt~
+
+# LatexMk files.
+*.fls
+*.fdb_latexmk
+
+# Archives.
+*.zip
+*.tar.gz
+
+*.markdown
+*.png
+*.dat
+
+lcc_indented.txt
