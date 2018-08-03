@@ -137,7 +137,11 @@ It looks like this:
 
 [![better formatted labels][2]][2]
 
-Of course, I still need to read in from the external file. I don't think the `labels` package permits formatting changes when reading from a file, so I tried [`textmerg`](https://www.ctan.org/pkg/textmerg).
+Of course, I still need to read in from the external file. I thought maybe I could modify the `\labelfile` macro to accomplish this. However, when I looked at `labels.sty`, I found it was just a wrapper for `\input`.
+
+    \def\labelfile#1{\begin{labels}\input#1\end{labels}}
+
+So next I tried [`textmerg`](https://www.ctan.org/pkg/textmerg).
 
     \begin{filecontents*}{\jobname.dat}
     PR
