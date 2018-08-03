@@ -55,7 +55,7 @@ I am creating a page of sticky labels containing Library of Congress Classificat
 
 It looks like this:
 
-(insert image here)
+[![simple labels, left flush][1]][1]
 
 However, I actually want to adjust the formatting of the labels so that they are shifted to the right while still being left-aligned. I accomplished this like so:
 
@@ -135,7 +135,7 @@ Full text here:
 
 It looks like this:
 
-(insert image here)
+[![better formatted labels][2]][2]
 
 Of course, I still need to read in from the external file. I don't think the `labels` package permits formatting changes when reading from a file, so I tried [`textmerg`](https://www.ctan.org/pkg/textmerg).
 
@@ -206,7 +206,7 @@ Of course, I still need to read in from the external file. I don't think the `la
 
 Unfortunately, LCCs are variable length; they are typically between two to four lines long. Some have one or more Cutter numbers; some do not. This means the numbers get split up incorrectly.
 
-(insert image here)
+[![labels split up incorrectly][3]][3]
 
 Of the following, what would be the best approach?
 
@@ -221,3 +221,12 @@ Of the following, what would be the best approach?
 - Use a different package, such as `datatool`?
 
   Most of the examples in `datatool` deal with CSVs, so I'm not sure how well this would work.
+
+Here is a link to a git repository to make it easier to get the files:
+
+https://github.com/nbeaver/lcc-label-question
+
+
+  [1]: https://i.stack.imgur.com/7hLhA.png
+  [2]: https://i.stack.imgur.com/UdduQ.png
+  [3]: https://i.stack.imgur.com/rzXjY.png

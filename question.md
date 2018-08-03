@@ -46,6 +46,10 @@ Of the following, what would be the best approach?
 
   Most of the examples in `datatool` deal with CSVs, so I'm not sure how well this would work.
 
+Here is a link to a git repository to make it easier to get the files:
+
+https://github.com/nbeaver/lcc-label-question
+
 
   [1]: https://i.stack.imgur.com/7hLhA.png
   [2]: https://i.stack.imgur.com/UdduQ.png
